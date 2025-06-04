@@ -1,0 +1,27 @@
+[
+  {
+    "rating": "3",
+    "feedback": "je suis chaud",
+    "timestamp": "2025-06-04 14:34:56"
+  },
+  {
+    "rating": 3,
+    "feedback": "je suis froid",
+    "timestamp": "2025-06-04 15:19:51"
+  },
+  {
+    "rating": 3,
+    "feedback": "dhdh",
+    "timestamp": "2025-06-04 16:01:24"
+  },
+  {
+    "rating": 3,
+    "feedback": "dự đoán không chính xác",
+    "timestamp": "2025-06-04 16:13:13"
+  },
+  {
+    "rating": 5,
+    "feedback": "ứng dụng tốt",
+    "timestamp": "2025-06-04 16:23:26"
+  }
+]
