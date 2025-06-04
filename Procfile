@@ -1,1 +1,1 @@
-web: gunicorn employee_churn:app
+web: gunicorn app:app
