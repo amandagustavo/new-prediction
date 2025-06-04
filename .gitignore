@@ -1,0 +1,43 @@
+# Loại bỏ môi trường ảo Python
+venv/
+.venv/
+
+# Loại bỏ file biên dịch Python
+__pycache__/
+*.pyc
+
+# Loại bỏ các file model/máy học nặng
+*.joblib
+*.model
+*.json
+*.pkl
+
+# Không loại bỏ file feature_columns.json nếu là cấu hình nhỏ cần thiết
+!feature_columns.json
+
+# Loại bỏ dữ liệu và file tạm
+*.csv
+*.xlsx
+*.db
+*.bak
+*.tmp
+
+# Loại bỏ file cấu hình IDE
+.vscode/
+*.code-workspace
+launch.json
+
+# Loại bỏ các file ảnh, feedback, file test
+*.png
+*.jpg
+*.jpeg
+feedback.json
+test*
+
+# Loại bỏ các file không cần thiết khác
+.DS_Store
+
+# Loại bỏ models và static nếu không cần up
+models/
+!models/feature_columns.json
+static/
