@@ -18,3 +18,23 @@ python app.py
 ## Lưu ý
 - Đặt các file HTML vào thư mục templates/
 - Model lớn thì không up lên GitHub, chỉ để link.
+
+
+
+# Tạo thư mục templates nếu chưa có
+mkdir -p templates
+
+# Di chuyển file index.html vào templates/
+mv index.html templates/index.html
+
+# Di chuyển file view_feedback.html vào templates/
+mv view_feedback.html templates/view_feedback.html
+
+# Thêm thay đổi vào git
+git add templates/index.html templates/view_feedback.html
+
+# Commit lại thay đổi
+git commit -m "Move HTML files to templates/ for Flask compatibility"
+
+# Đẩy lên GitHub
+git push
