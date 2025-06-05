@@ -371,13 +371,10 @@ def view_feedback():
                              error='Có lỗi xảy ra khi tải đánh giá')
 
 if __name__ == '__main__':
-    logger.info('Starting Flask server...')
-    try:
-        # Log thông tin chi tiết về môi trường
-        logger.info(f'Python version: {sys.version}')
-        logger.info(f'Working directory: {os.getcwd()}')
-        logger.info(f'Server will run on: http://localhost:8000')
-        
-        app.run(host='0.0.0.0', port=8000, debug=True)
+    logger.info('Starting Flask server in development mode...')
+    logger.info(f'Python version: {sys.version}')
+    logger.info(f'Working directory: {os.getcwd()}')
+    logger.info(f'Server will run on: http://localhost:8000')
+    app.run(host='0.0.0.0', port=8000, debug=True)
     except Exception as e:
         logger.error(f"Server startup error: {str(e)}", exc_info=True)
