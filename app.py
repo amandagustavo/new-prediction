@@ -371,8 +371,9 @@ def view_feedback():
                              error='Có lỗi xảy ra khi tải đánh giá')
 
 if __name__ == '__main__':
+    port = int(os.environ.get("PORT", 10000))  # 10000 là mặc định khi chạy local
     logger.info('Starting Flask server in development mode...')
     logger.info(f'Python version: {sys.version}')
     logger.info(f'Working directory: {os.getcwd()}')
-    logger.info(f'Server will run on: http://localhost:8000')
-    app.run(host='0.0.0.0', port=8000, debug=True)
+    logger.info(f'Server will run on: http://localhost:{port}')
+    app.run(host='0.0.0.0', port=port, debug=True)
