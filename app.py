@@ -12,6 +12,9 @@ from catboost import CatBoostClassifier
 import sys
 from database import save_prediction, save_feedback, get_all_feedback
 
+print("scikit-learn version:", sklearn.__version__)
+print("xgboost version:", xgboost.__version__)
+
 # Cấu hình logging chi tiết hơn
 logging.basicConfig(
     level=logging.DEBUG,
