@@ -12,6 +12,8 @@ from catboost import CatBoostClassifier
 import sys
 from database import save_prediction, save_feedback, get_all_feedback
 
+import sklearn
+import xgboost
 print("scikit-learn version:", sklearn.__version__)
 print("xgboost version:", xgboost.__version__)
 
